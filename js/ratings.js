@@ -19,3 +19,8 @@ const collect_ratings = () => {
 
     return ratings;
 }
+
+document.addEventListener("change", () => {
+    collect_ratings();
+    ratings.average = document.querySelector("#average").toFixed(2);
+});
